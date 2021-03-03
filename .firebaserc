@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firestore-grafico-e0aad": {
+      "hosting": {
+        "goty": [
+          "firestore-grafico-e0aad"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firestore-grafico-e0aad"
+  }
+}

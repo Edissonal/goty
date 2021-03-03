@@ -1,0 +1,151 @@
+[debug] [2021-02-02T00:33:20.719Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:33:20.721Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdissonA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-02T00:33:20.722Z] CLI Version:   9.3.0
+[debug] [2021-02-02T00:33:20.722Z] Platform:      win32
+[debug] [2021-02-02T00:33:20.722Z] Node Version:  v12.18.3
+[debug] [2021-02-02T00:33:20.723Z] Time:          Mon Feb 01 2021 19:33:20 GMT-0500 (GMT-05:00)
+[debug] [2021-02-02T00:33:20.724Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:33:20.724Z] 
+[debug] [2021-02-02T00:33:20.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-02T00:33:20.733Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\angular\goty
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using firestore-grafico-e0aad. 
+[debug] [2021-02-02T00:33:26.511Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad [none]
+[debug] [2021-02-02T00:33:26.937Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad 200
+[debug] [2021-02-02T00:33:26.937Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad {"projectId":"firestore-grafico-e0aad","projectNumber":"607669608209","displayName":"firestore-grafico","name":"projects/firestore-grafico-e0aad","resources":{"hostingSite":"firestore-grafico-e0aad","realtimeDatabaseInstance":"firestore-grafico-e0aad-default-rtdb","storageBucket":"firestore-grafico-e0aad.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-02-02T00:33:26.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-02T00:33:26.963Z] > authorizing via signed-in user
+[debug] [2021-02-02T00:33:26.963Z] [iam] checking project firestore-grafico-e0aad for permissions ["firebase.projects.get"]
+[debug] [2021-02-02T00:33:26.965Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-02T00:33:26.966Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-02T00:33:27.198Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 02 Feb 2021 00:33:54 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-02T00:33:27.582Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/firestore-grafico-e0aad:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-02-02T00:33:28.268Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Feb 2021 00:33:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=425","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-02T00:33:28.271Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/firestore-grafico-e0aad/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-02-02T00:33:28.273Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/firestore-grafico-e0aad/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-02-02T00:33:29.075Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Feb 2021 00:33:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-02T00:33:29.721Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 02 Feb 2021 00:33:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-02T00:33:51.881Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:33:51.884Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdissonA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-02T00:33:51.884Z] CLI Version:   9.3.0
+[debug] [2021-02-02T00:33:51.884Z] Platform:      win32
+[debug] [2021-02-02T00:33:51.885Z] Node Version:  v12.18.3
+[debug] [2021-02-02T00:33:51.886Z] Time:          Mon Feb 01 2021 19:33:51 GMT-0500 (GMT-05:00)
+[debug] [2021-02-02T00:33:51.886Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:33:51.886Z] 
+[debug] [2021-02-02T00:33:51.894Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-02T00:33:51.895Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\angular\goty
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using firestore-grafico-e0aad. 
+[debug] [2021-02-02T00:34:03.906Z] > refreshing access token with scopes: []
+[debug] [2021-02-02T00:34:03.907Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-02T00:34:04.192Z] <<< HTTP RESPONSE 200 {"date":"Tue, 02 Feb 2021 00:34:31 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-02T00:34:04.230Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad [none]
+[debug] [2021-02-02T00:34:04.585Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad 200
+[debug] [2021-02-02T00:34:04.586Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad {"projectId":"firestore-grafico-e0aad","projectNumber":"607669608209","displayName":"firestore-grafico","name":"projects/firestore-grafico-e0aad","resources":{"hostingSite":"firestore-grafico-e0aad","realtimeDatabaseInstance":"firestore-grafico-e0aad-default-rtdb","storageBucket":"firestore-grafico-e0aad.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-02T00:35:52.501Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:35:52.504Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EdissonA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-02T00:35:52.504Z] CLI Version:   9.3.0
+[debug] [2021-02-02T00:35:52.504Z] Platform:      win32
+[debug] [2021-02-02T00:35:52.504Z] Node Version:  v12.18.3
+[debug] [2021-02-02T00:35:52.506Z] Time:          Mon Feb 01 2021 19:35:52 GMT-0500 (GMT-05:00)
+[debug] [2021-02-02T00:35:52.506Z] ----------------------------------------------------------------------
+[debug] [2021-02-02T00:35:52.506Z] 
+[debug] [2021-02-02T00:35:52.521Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-02T00:35:52.522Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\angular\goty
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using firestore-grafico-e0aad. 
+[debug] [2021-02-02T00:36:47.841Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad [none]
+[debug] [2021-02-02T00:36:48.255Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad 200
+[debug] [2021-02-02T00:36:48.255Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/firestore-grafico-e0aad {"projectId":"firestore-grafico-e0aad","projectNumber":"607669608209","displayName":"firestore-grafico","name":"projects/firestore-grafico-e0aad","resources":{"hostingSite":"firestore-grafico-e0aad","realtimeDatabaseInstance":"firestore-grafico-e0aad-default-rtdb","storageBucket":"firestore-grafico-e0aad.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
